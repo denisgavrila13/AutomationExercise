@@ -1,0 +1,22 @@
+{
+  "name": "automationexercise",
+  "version": "1.0.0",
+  "description": "e2e tests with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisgavrila13/cypress-tests-e2e.git"
+  },
+  "author": "Denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denisgavrila13/cypress-tests-e2e/issues"
+  },
+  "homepage": "https://github.com/denisgavrila13/cypress-tests-e2e#readme",
+  "devDependencies": {
+    "cypress": "^14.5.1"
+  }
+}
