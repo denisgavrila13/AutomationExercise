@@ -1,0 +1,10 @@
+{
+  "positiveData": {
+    "email": "rudolph_12@gmail.com",
+    "password": "rudolph2000"
+  },
+  "negativeData": {
+    "email": "daldalsdl@gmail.com",
+    "password": "dasdk"
+  }
+}
