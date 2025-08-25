@@ -2,6 +2,9 @@ const selectors = {
   loginButton: '#header [href="/login"',
   deleteAccountButton: '[href="/delete_account"]',
   logoutButton: '[href="/logout"]',
+  contactUsButton: '[href="/contact_us"]',
+  testcasesButtuon: '.navbar-nav [href="/test_cases"]',
+  productsButton: '[href="/products"]',
 };
 
 class HeaderPage {
@@ -10,6 +13,15 @@ class HeaderPage {
   }
   LogOut() {
     cy.get(selectors.logoutButton).click();
+  }
+  goToContactUs() {
+    cy.get(selectors.contactUsButton).click();
+  }
+  goToTestcasesPage() {
+    cy.get(selectors.testcasesButtuon).click();
+  }
+  goToProductsPage() {
+    cy.get(selectors.productsButton).click();
   }
 }
 

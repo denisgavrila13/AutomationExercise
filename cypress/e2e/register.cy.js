@@ -1,21 +1,8 @@
-const { faker } = require('@faker-js/faker');
 const { registerPage } = require('../support/pageObjects/registerPage');
 const { headerPage } = require('../support/pageObjects/headerPage');
 const { commonAssertion } = require('../support/pageObjects/commonAssertions');
 
 describe('Register feature', () => {
-  const firstName = faker.person.firstName();
-  const email = faker.internet.email();
-  const password = faker.internet.password();
-  const lastName = faker.person.lastName();
-  const company = faker.company.name();
-  const address = faker.location.streetAddress();
-  const address2 = faker.location.streetAddress();
-  const state = faker.location.state();
-  const city = faker.location.city();
-  const zipcode = faker.location.zipCode();
-  const mobileNumber = faker.phone.number();
-
   beforeEach(() => {
     cy.visit('/');
     cy.fixture('userDetails').as('users');

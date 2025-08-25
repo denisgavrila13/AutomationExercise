@@ -31,7 +31,8 @@ describe('Test login feature', () => {
       commonAssertion.isElementVisible('Your email or password is incorrect!');
     });
   });
-  it.only('Logout user', () => {
+
+  it('Logout user', () => {
     cy.get('@users').then((user) => {
       commonAssertion.isHomePageVisible();
       headerPage.goToLogin();
@@ -41,7 +42,7 @@ describe('Test login feature', () => {
       loginPage.submitLogin();
       commonAssertion.isElementVisible('Logged in as');
       headerPage.LogOut();
-      commonAssertion.isLoginPageVisible();
+      commonAssertion.isUrlVisible('login');
     });
   });
 });

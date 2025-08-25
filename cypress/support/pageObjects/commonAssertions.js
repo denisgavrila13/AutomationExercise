@@ -6,8 +6,8 @@ class CommonAssertion {
   isHomePageVisible() {
     cy.get('[href="/"][style="color: orange;"]').should('be.visible');
   }
-  isLoginPageVisible() {
-    cy.url().should('include', '/login');
+  isUrlVisible(page) {
+    cy.url().should('include', page);
   }
 }
 
