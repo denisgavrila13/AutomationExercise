@@ -4,7 +4,7 @@ import { headerPage } from '../support/pageObjects/headerPage';
 import { productPage } from '../support/pageObjects/productPage';
 import { selectors } from '../support/pageObjects/productPage';
 
-describe('test header feature', () => {
+describe('test navigation', () => {
   beforeEach(() => {
     cy.fixture('userDetails').as('users');
   });
